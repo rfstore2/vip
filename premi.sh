@@ -535,7 +535,7 @@ WantedBy=multi-user.target
 EOF
 systemctl daemon-reload
 systemctl restart vmip
-systemctl disable vmip
+systemctl enable vmip
 
 cat >/etc/systemd/system/vlip.service << EOF
 [Unit]
